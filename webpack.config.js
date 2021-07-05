@@ -98,6 +98,13 @@ module.exports = {
   plugins: plugins(),
   module: {
     rules: [
+      // HTML 
+      {
+        test: /\.html/,
+        use: {
+          loader: 'html-loader'
+        }
+      },
       // JavaScript
       {
         test: /\.js$/,
